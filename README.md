@@ -30,5 +30,4 @@ Follow these steps to set up the project on your local machine:
 ### 🔁 Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/ProxenixOrg/Movie-sentimental-analysis.git
-cd Movie-sentimental-analysis
+git clone https://github.com/ProxenixOrg/Movies
