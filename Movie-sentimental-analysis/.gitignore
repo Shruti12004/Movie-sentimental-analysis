@@ -1,0 +1,4 @@
+# Ignore Python and model files
+*.pyc
+__pycache__/
+*.pkl
