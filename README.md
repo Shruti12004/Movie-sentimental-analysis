@@ -90,14 +90,17 @@ Visit http://127.0.0.1:8000/docs to test API.
 ```bash
 cd frontend
 npm install
-npm run dev```
+npm run dev
+```
 
 ### 📊 Model Performance
-Metric	   Score
-Accuracy	 90%
-Precision	 0.90
-Recall	   0.90
-F1-score	 0.90
+
+| Metric     | Score |
+|------------|-------|
+| Accuracy   | 90%   |
+| Precision  | 0.90  |
+| Recall     | 0.90  |
+| F1-score   | 0.90  |
 
 ### 🤖 Example API Call
 ```bash
