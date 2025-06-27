@@ -86,8 +86,11 @@ pip install fastapi uvicorn scikit-learn joblib pandas
 uvicorn api.sentiment_api:app --reload
 Visit http://127.0.0.1:8000/docs to test API.
 ```
-### 4. Run Bolt.new frontend
-Go to https://bolt.new, paste your Bolt code (from App.bolt), and click Run.
+### 4. Run frontend
+```bash
+cd frontend
+npm install
+npm run dev```
 
 ### 📊 Model Performance
 Metric	   Score
