@@ -6,7 +6,7 @@ A machine learning web app that classifies movie reviews as **Positive** or **Ne
 
 ## 🚀 Live Demo
 
-(If hosted, insert your link here)  
+[Live URL](https://starlit-tartufo-83cb03.netlify.app/)  
 _Local Usage:_ [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ---
@@ -50,26 +50,22 @@ Frontend shows either:
 ---
 
 ## 📁 Project Structure
-
+```yaml
 movie-sentiment-analyzer/
 ├── backend/
-│ ├── train_model.py # Model training (Logistic Regression + GridSearch)
-│ ├── predict.py # Optional batch predictions
+│ ├── train_model.py 
 │ ├── data/
 │ │ ├── cleaned_reviews_binary.csv
 │ ├── models/
-│ │ ├── binary_sentiment_model.pkl
-│ │ ├── binary_vectorizer.pkl
+│ │ ├── sentiment_model.pkl
+│ │ ├── vectorizer.pkl
 ├── api/
 │ └── sentiment_api.py # FastAPI app + CORS
 ├── frontend/
 │ ├── App.bolt # Bolt UI (1-page)
 │ └── api.js # Connects to FastAPI /predict
 ├── README.md
-
-yaml
-Copy
-Edit
+```
 
 ---
 
@@ -80,32 +76,28 @@ Edit
 ```bash
 git clone https://github.com/your-username/movie-sentiment-analyzer.git
 cd movie-sentiment-analyzer
-2. Install dependencies
-bash
-Copy
-Edit
+```
+### 2. Install dependencies
+```bash
 pip install fastapi uvicorn scikit-learn joblib pandas
-3. Run the FastAPI backend
-bash
-Copy
-Edit
+```
+### 3. Run the FastAPI backend
+```bash
 uvicorn api.sentiment_api:app --reload
 Visit http://127.0.0.1:8000/docs to test API.
-
-4. Run Bolt.new frontend
+```
+### 4. Run Bolt.new frontend
 Go to https://bolt.new, paste your Bolt code (from App.bolt), and click Run.
 
-📊 Model Performance
-Metric	Score
-Accuracy	90%
-Precision	0.90
-Recall	0.90
-F1-score	0.90
+### 📊 Model Performance
+Metric	   Score
+Accuracy	 90%
+Precision	 0.90
+Recall	   0.90
+F1-score	 0.90
 
-🤖 Example API Call
-bash
-Copy
-Edit
+### 🤖 Example API Call
+```bash
 POST http://127.0.0.1:8000/predict
 Content-Type: application/json
 
@@ -113,15 +105,14 @@ Content-Type: application/json
   "review": "The movie was thrilling and emotional!"
 }
 Response:
-
-json
-Copy
-Edit
+```
+```json
 {
   "sentiment": "Positive"
 }
-📌 Author
-Built with ❤️ by [Your Name]
+```
+### 📌 Author
+Built with ❤️ by Navaneeth and contributers.
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
