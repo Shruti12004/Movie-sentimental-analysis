@@ -118,7 +118,7 @@ Response:
 }
 ```
 ### 📌 Author
-Built with ❤️ by Navaneeth and contributers.
+Built with ❤️ by Shruti and contributers.
 
 ### 📄 License
 This project is licensed under the MIT License.
